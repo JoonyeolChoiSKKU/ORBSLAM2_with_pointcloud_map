@@ -31,7 +31,7 @@
 
 #include <thread>
 #include <mutex>
-#include "Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h"
+#include <Thirdparty/g2o/g2o/types/types_seven_dof_expmap.h>
 
 namespace ORB_SLAM2
 {
@@ -79,8 +79,6 @@ public:
     void RequestFinish();
 
     bool isFinished();
-
-    EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 
 protected:
 
@@ -141,9 +139,6 @@ protected:
 
     // Fix scale in the stereo/RGB-D case
     bool mbFixScale;
-
-
-    bool mnFullBAIdx;
 };
 
 } //namespace ORB_SLAM
